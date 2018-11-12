@@ -28,6 +28,8 @@ Elastic provides open-source support for Logstash via the [elastic/logstash GitH
 -	[`5.6.13`, `5.6`, `5` (*5/Dockerfile*)](https://github.com/docker-library/logstash/blob/d5ef01551cfeae4e9aa45796689911485172dd68/5/Dockerfile)
 -	[`5.6.13-alpine`, `5.6-alpine`, `5-alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/d5ef01551cfeae4e9aa45796689911485172dd68/5/alpine/Dockerfile)
 
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/logstash/badge/icon) (`amd64/logstash` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/logstash/)
+
 # Quick reference
 
 -	**Where to get help**:  
@@ -122,13 +124,13 @@ $ docker run -d my-logstash
 
 # Image Variants
 
-The `logstash` images come in many flavors, each designed for a specific use case.
+The `amd64/logstash` images come in many flavors, each designed for a specific use case.
 
-## `logstash:<version>`
+## `amd64/logstash:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `logstash:<version>-alpine`
+## `amd64/logstash:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
